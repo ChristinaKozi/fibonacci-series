@@ -3,13 +3,13 @@ function fibonacci(num) {
     return num
   }
 
-  let a = 0
-  let b = 1
+  let first_number = 0
+  let second_number = 1
   let sum = 0
   for (let i = 2 ; i <= num; i++) {
-    sum = a + b
-    a = b
-    b = sum
+    sum = first_number + second_number
+    first_number = second_number
+    second_number = sum
     }
   return sum
 }
